@@ -2,16 +2,15 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import styles from "@/app/styles/notFound.module.css";
 
 export default function NotFoundComponent() {
   const path = usePathname();
 
   return (
-    <main className={styles.container}>
+    <main className="container">
       <h1>{`"${path}"`} Not Found 📖</h1>
       <p>Oops! We could not find this post.</p>
-      <Link href="/blog" className={styles.button}>
+      <Link href="/blog" className="button">
         Return To Blog
       </Link>
     </main>
